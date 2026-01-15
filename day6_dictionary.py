@@ -30,7 +30,11 @@ del numbers
 # does list stores the value by index ?
 
 # loop 
+#            0          1        2       3
 country = ["india","srilanka","china","pakistan"]
+
+for x in range(4):
+    print(x)
 
 
 
