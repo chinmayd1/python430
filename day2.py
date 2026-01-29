@@ -13,3 +13,5 @@ while(i1 <= 5):
       continue
    print(i1) #1 #2 #4 # 6
    i1 += 1 #2 #3 #5 #6
+ 
+# 

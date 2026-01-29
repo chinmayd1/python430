@@ -32,9 +32,44 @@ del numbers
 # loop 
 #            0          1        2       3
 country = ["india","srilanka","china","pakistan"]
-
 for x in range(4):
     print(x)
+    print(country[x])
+
+# for each 
+for x in country:
+    print(x)
+
+# while loop 
+
+i = 0
+while(i < len(country)):
+    print(country[i])
+    i = i + 1
+
+
+# methods 
+
+numbers = [11,22,33,44,55]
+
+
+numbers.append(66)
+numbers.pop()
+numbers.remove(11)
+numbers.extend([122,22,333,444])
+numbers.sort()
+numbers.reverse()
+numbers.clear()
+numbers.copy()
+numbers.insert(3,333)
+numbers.index(2)
+
+d = [11,22,33]
+e  = d.copy()
+e[1] = 222
+print(d)
+print(e)
+
 
 
 

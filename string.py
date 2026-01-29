@@ -117,3 +117,4 @@ i2 = 0
 while(i2 < len(city)):
     print(city[i2])
     i2 = i2 + 1
+

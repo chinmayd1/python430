@@ -67,9 +67,7 @@ for x in countries:
     print(x)
 
 # while loop
-
 numbers = [11,22,33,44,55]
-
 i1 = 0
 while(i1 < len(numbers)):
     #print(i1)

@@ -47,3 +47,8 @@ print(numberB[2])
 print(numberB[0])
 numberB[0] = 111
 print(numberB)
+
+
+
+list1 = [10,20,30,40,50]
+
