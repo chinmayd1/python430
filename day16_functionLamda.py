@@ -44,13 +44,80 @@ for x in marks:
         above60.append(x)
 print(above60)
 
+
+
 e5 = filter(lambda x : x > 60,marks)
 e6 = list(e5)
 print(e6)
-
 transactions = [43,55,66,3,-45,60,-33,55,66]
 deposit =  list(filter(lambda x: x > 0,transactions))
 print(deposit)
 
 withdrawl =  list(filter(lambda x: x < 0,transactions))
 print(withdrawl)
+
+
+# program 1
+numbers = [11,22,33]
+total = 0
+
+for x in numbers:
+    total = total + x
+print(total)
+
+from functools import reduce 
+numbers = [11,22,33]
+e = reduce(lambda acc,x:acc+x,numbers,0)
+print(e)
+
+# list comprehension ----> output ----> list ---> []
+#[expression:loop:conditio]
+
+# program 2
+numbers = [1,2,3,4,5,6,7,8,9,10]
+#[2,4,6,8,10,12,14,16,18,20]
+e  = [x * 2 for x in numbers]
+print(e)
+
+marks = [44,55,22,11,66,33,44,55,66]
+above30 = []
+for x in marks :
+    if x > 40:
+        above30.append(x)
+print(above30)
+
+above302  = list(filter(lambda x : x > 40,marks))
+print(above302)
+
+#[expression:loop:condition]
+above303 = [x for x in marks if x > 40]
+print(above303)
+
+# program 3
+
+names = ["chinmay","sarika","ram","aachal"]
+e = list(map(lambda x:x.upper(),names))
+print(e)
+
+e2 = [x.upper() for x in names]
+print(e2)
+
+# program 4
+transactions = [11,-12,120,-13]
+deposit =list(filter(lambda x : x > 0,transactions))
+print(deposit)
+
+withdrawls =list(filter(lambda x : x < 0,transactions))
+print(withdrawls)
+
+# program 5
+
+numbers = [11,22,33,44]
+print([x for x in numbers if x % 2 == 0])
+#["odd","even","odd","even"]
+
+print(["even" for x in numbers if x % 2 == 0])
+
+#[tenary operator:loop]
+e3 =["even" if x % 2 == 0 else "odd" for x in numbers]
+print(e3)
